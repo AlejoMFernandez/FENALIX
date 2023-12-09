@@ -122,6 +122,14 @@ footer nav ul #twitter:hover {
   background-color: black;
   padding-bottom: 50px;
 }
+.section-carrousel .title-carrousel h2 {
+  color: rgb(199, 199, 199);
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+}
 .section-carrousel .carrousel {
   width: 100%;
   display: flex;
@@ -191,12 +199,11 @@ footer nav ul #twitter:hover {
   display: grid;
 }
 .section-series .container-series .title {
-  font-size: 40px;
-  color: #fff;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  color: rgb(199, 199, 199);
   font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
   z-index: 3;
 }
 .section-series .container-series .series {
@@ -256,7 +263,6 @@ footer nav ul #twitter:hover {
   color: #fff;
   margin-bottom: 20px;
   text-transform: uppercase;
-  letter-spacing: 2px;
   font-weight: 400;
 }
 .section-aboutus .aboutus .images {
@@ -293,14 +299,23 @@ footer nav ul #twitter:hover {
 .section-aboutus .aboutus .images .redes .red {
   margin: 20px;
 }
+.section-aboutus .aboutus .images .redes .red #linkedin {
+  transition: background-color 0.2s ease-in-out;
+}
 .section-aboutus .aboutus .images .redes .red #linkedin:hover {
-  background-image: linear-gradient(#0077b5, #00486e);
+  background-color: #0077b5;
+}
+.section-aboutus .aboutus .images .redes .red #github {
+  transition: background-color 0.2s ease-in-out;
 }
 .section-aboutus .aboutus .images .redes .red #github:hover {
-  background-image: linear-gradient(#333, #332);
+  background-color: #333;
+}
+.section-aboutus .aboutus .images .redes .red #gmail {
+  transition: background-color 0.2s ease-in-out;
 }
 .section-aboutus .aboutus .images .redes .red #gmail:hover {
-  background-image: linear-gradient(#EA4335, #691d16);
+  background-color: yellow;
 }
 .section-aboutus .aboutus .images .redes .red img {
   width: 80px;
@@ -326,7 +341,7 @@ footer nav ul #twitter:hover {
     margin-right: 20px;
   }
   header nav ul a {
-    font-size: 10px;
+    font-size: 12px;
     color: #fff;
     text-decoration: none;
     margin: 5px;
@@ -371,6 +386,10 @@ footer nav ul #twitter:hover {
 @media (max-width: 768px) {
   .section-carrousel {
     padding-bottom: 20px;
+  }
+  .section-carrousel .title-carrousel h2 {
+    font-size: 20px;
+    padding: 5px;
   }
   .section-carrousel .carrousel {
     flex-wrap: wrap;
