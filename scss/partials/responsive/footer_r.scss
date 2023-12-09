@@ -1,0 +1,15 @@
+@media (max-width: 768px){
+    footer{
+        nav{
+            padding: 10px;
+            ul{
+                display: flex;
+                font-size: 12px;
+                align-items: center;
+                a{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

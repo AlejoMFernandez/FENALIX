@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* HEADER */
+@import "partials/header.scss";
+/* FOOTER */
+@import "partials/footer.scss";
+
+/* INDEX */
+@import "partials/section-logo.scss";
+@import "partials/section-carrousel.scss";
+
+/* INDEXS */
+@import "partials/series.scss";
+@import "partials/aboutus.scss";
+@import "partials/account.scss";
+
+/* RESPONSIVE */
+@import "partials/responsive/header_r.scss";
+@import "partials/responsive/footer_r.scss";
+@import "partials/responsive/logo_r.scss";
+@import "partials/responsive/carrousel_r.scss";
+@import "partials/responsive/series_r.scss";
+@import "partials/responsive/aboutus_r.scss";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}

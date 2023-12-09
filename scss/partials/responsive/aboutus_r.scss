@@ -1,0 +1,47 @@
+@media (max-width: 768px){
+    .section-aboutus{
+        padding-top: 60px;
+        .aboutus{
+            margin-inline: 10%;
+            .text{
+                font-size: 12px;
+                h1{
+                    font-size: 20px;
+                    margin-bottom: 12px;
+                    letter-spacing: 0px;
+                }
+            }
+            .images{
+                padding-top: 30px !important;
+                padding-bottom: 15px !important;
+                padding-block: 0px;
+                flex-direction: column;
+                .avatar{
+                    margin: 10px;
+                    img{
+                        width: 150px;
+                    }
+                    .avatar-info{
+                        .name{
+                            font-size: 15px;
+                        }
+                        .description{
+                            margin-top: 3px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .redes{
+                    .red{
+                        margin: 10px;
+                        img{
+                            width: 50px;
+                            background-color: white;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

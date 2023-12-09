@@ -1,0 +1,28 @@
+@media (max-width: 768px){
+    .section-carrousel{
+        padding-bottom: 20px;
+        .carrousel{
+            flex-wrap: wrap;
+            .anime{
+                margin-inline: 10px;
+                margin-block: 10px;
+                max-width: 170px;
+                .anime-image{
+                    img{
+                        height: 220px;
+                        width: 150px;
+                    }
+                }
+                .anime-text{
+                    padding: 0px;
+                    h2{
+                        font-size: 12px;
+                    }                
+                    h5{
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }            
+}

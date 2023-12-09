@@ -1,0 +1,32 @@
+footer{
+    background-image: linear-gradient(black 50%, #0f0f0f);
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+    nav{
+        display: flex;
+        padding: 40px;
+        justify-content: space-between;
+        ul{
+            color: #fff;
+            z-index: 5;
+            a{
+                text-decoration: none;
+                font-size: 17px;
+                margin: 10px;
+                color: #fff;
+                font-weight: 300;
+                transition: color 0.2s ease-in-out;
+            }
+            #ig:hover{
+                color: #C13584 ;
+            }
+            #tiktok:hover{
+                color: gray ;
+            }
+            #twitter:hover{
+                color: #00acee ;
+            }
+        }
+    }
+}

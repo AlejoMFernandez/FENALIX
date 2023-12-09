@@ -1,0 +1,75 @@
+.section-aboutus{
+    width: 100%;
+    background-image: linear-gradient(to bottom, black 1%, #0f0f0f, black);
+    padding-top: 120px;
+    .aboutus{
+        margin-inline: 25%;
+        .text{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 300;
+            h1{
+                font-size: 40px;
+                color: #fff;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: 400;
+            }
+        }
+        .images{
+            padding-block: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .avatar{
+                margin: 50px;
+                img{
+                    width: 240px;
+                }
+                .avatar-info{
+                    margin-top: 5px;
+                    display: grid;
+                    .name{
+                        font-size: 25px;
+                        font-weight: 300;
+                        color: #fff;
+                    }
+                    .description{
+                        font-size: 20px;
+                        font-weight: 300;
+                        color: gray;
+                    }
+                }
+            }
+            .redes{
+                display: flex;
+                align-items: center;
+                .red{
+                    margin: 20px;
+                    #linkedin{
+                        &:hover{
+                            background-image: linear-gradient(#0077b5, #00486e);
+                        }
+                    }
+                    #github{
+                        &:hover{
+                            background-image: linear-gradient(#333, #332);
+                        }
+                    }
+                    #gmail{
+                        &:hover{
+                            background-image: linear-gradient(#EA4335, #691d16);
+                        }
+                    }
+                    img{
+                        width: 80px;
+                        background-color: white;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

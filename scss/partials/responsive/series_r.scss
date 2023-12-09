@@ -1,0 +1,59 @@
+@media (max-width: 768px){
+    .background-image-series {
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to bottom, black -10%, transparent, black);
+            z-index: 2;
+        }
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .section-series{
+        width: 100%;
+        background-color: black;
+        padding-top: 60px;
+        .container-series{
+            margin-inline: 5%;
+            justify-items: center;
+            .title{
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .series{
+                flex-wrap: wrap;
+                .anime{
+                    margin-inline: 15px;
+                    max-width: 150px;
+                    .anime-image{
+                        img{
+                            height: 220px;
+                            width: 150px;
+                        }
+                    }
+                    .anime-text{
+                        padding: 0px;
+                        h2{
+                            font-size: 12px;
+                        }                
+                        h5{
+                            font-size: 9px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

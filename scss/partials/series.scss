@@ -1,0 +1,78 @@
+.background-image-series {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to bottom, black 1%, transparent, black);
+        z-index: 2;
+    }
+    img {
+        object-fit: fill;
+        width: 100%;
+    }
+    
+}
+.section-series{
+    width: 100%;
+    background-color: black;
+    padding-top: 120px;
+    .container-series{
+        margin-inline: 5%;
+        display: grid;
+        .title{
+            font-size: 40px;
+            color: #fff;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 300;
+            z-index: 3;
+        }
+        .series{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .anime{
+                z-index: 3;
+                margin-inline: 30px;
+                margin-block: 10px;
+                transition: scale 0.1s ease-in-out;
+                max-width: 250px;
+                &:hover{
+                    scale: 1.05;
+                }
+                .anime-image{
+                    img{
+                        width: 250px;
+                        height: 400px;
+                        opacity: 0.7;
+                        transition: opacity 0.1s ease-in-out;
+                        &:hover{
+                            opacity: 0.9;
+                        }
+                    }
+                }
+                .anime-text{
+                    padding: 5px;
+                    h2{
+                        color: #fff;
+                        font-weight: 400;
+                        font-size: 17px;
+                    }                
+                    h5{
+                        color: rgb(209, 205, 205);
+                        font-weight: 300;
+                        font-size: 14px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
