@@ -19,21 +19,23 @@
             width: 100%;
         }
         .logo{
-            z-index: 3;
+            z-index: 2;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: white; /* Ajusta el color del texto según tus necesidades */
+            color: transparent; /* Ajusta el color del texto según tus necesidades */
             text-align: center;
             h1{
-                text-shadow: 1px 1px 10px black;
                 font-weight: 800;
                 font-size: 100px;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: white;
             }
             h6{
                 font-weight: 300;
                 font-size: 20px;
+                color: #fff;
             }
         }
     }

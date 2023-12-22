@@ -38,41 +38,59 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            .anime{
-                z-index: 3;
-                margin-inline: 30px;
-                margin-block: 10px;
-                transition: scale 0.1s ease-in-out;
-                max-width: 250px;
-                &:hover{
-                    scale: 1.05;
-                }
-                .anime-image{
-                    img{
-                        width: 250px;
-                        height: 400px;
-                        opacity: 0.7;
-                        transition: opacity 0.1s ease-in-out;
-                        &:hover{
-                            opacity: 0.9;
+            a{
+                text-decoration: none;
+                .anime{
+                    z-index: 3;
+                    margin-inline: 30px;
+                    margin-block: 10px;
+                    transition: scale 0.1s ease-in-out;
+                    max-width: 250px;
+                    position: relative;
+                    transform: translateY(-400%);
+                    &:hover{
+                        scale: 1.05;
+                    }
+                    .anime-image{
+                        img{
+                            width: 250px;
+                            height: 400px;
+                            opacity: 0.8;
+                            &:hover{
+                            }
                         }
                     }
-                }
-                .anime-text{
-                    padding: 5px;
-                    h2{
-                        color: #fff;
-                        font-weight: 400;
-                        font-size: 17px;
-                    }                
-                    h5{
-                        color: rgb(209, 205, 205);
-                        font-weight: 300;
-                        font-size: 14px;
-                        margin-top: 5px;
+                    .anime-text{
+                        padding: 5px;
+                        h2{
+                            color: #fff;
+                            font-weight: 400;
+                            font-size: 17px;
+                            text-decoration: none;
+                        }                
+                        h5{
+                            color: rgb(209, 205, 205);
+                            font-weight: 300;
+                            font-size: 14px;
+                            margin-top: 5px;
+                            text-decoration: none;
+                        }
                     }
                 }
             }
         }
     }
+}
+
+@keyframes appear {
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.aparecerDesdeArriba {
+    animation: appear 0.4s forwards;
 }
