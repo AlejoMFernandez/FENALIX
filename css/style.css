@@ -250,7 +250,6 @@ footer nav ul #twitter:hover {
   margin-top: 5px;
   text-decoration: none;
 }
-
 @keyframes appear {
   0% {
     transform: translateY(-200%);
@@ -259,6 +258,7 @@ footer nav ul #twitter:hover {
     transform: translateY(0);
   }
 }
+
 .aparecerDesdeArriba {
   animation: appear 0.4s forwards;
 }
@@ -667,22 +667,30 @@ footer nav ul #twitter:hover {
   .section-series .container-series .series {
     flex-wrap: wrap;
   }
-  .section-series .container-series .series .anime {
+  .section-series .container-series .series a .anime {
     margin-inline: 15px;
     max-width: 150px;
   }
-  .section-series .container-series .series .anime .anime-image img {
+  .section-series .container-series .series a .anime .anime-image img {
     height: 220px;
     width: 150px;
   }
-  .section-series .container-series .series .anime .anime-text {
+  .section-series .container-series .series a .anime .anime-text {
     padding: 0px;
   }
-  .section-series .container-series .series .anime .anime-text h2 {
+  .section-series .container-series .series a .anime .anime-text h2 {
     font-size: 12px;
   }
-  .section-series .container-series .series .anime .anime-text h5 {
+  .section-series .container-series .series a .anime .anime-text h5 {
     font-size: 9px;
+  }
+  @keyframes appear {
+    0% {
+      transform: translateX(-100vh);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }
 @media (max-width: 768px) {
@@ -726,6 +734,102 @@ footer nav ul #twitter:hover {
     width: 50px;
     background-color: white;
     padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .section-watch {
+    padding-top: 80px;
+  }
+  .section-watch .image-cover-back {
+    height: 40vh;
+  }
+  .section-watch .image-cover-back img {
+    height: 44vh;
+  }
+  .section-watch .watch-container {
+    margin-inline: 5%;
+    width: 65%;
+  }
+  .section-watch .watch-container .title {
+    margin-top: 0px;
+  }
+  .section-watch .watch-container .title h1 {
+    font-size: 25px;
+  }
+  .section-watch .watch-container .title h6 {
+    font-size: 10px;
+  }
+  .section-watch .watch-container .watch-btn {
+    height: 60px;
+  }
+  .section-watch .watch-container .watch-btn .btn-play a {
+    font-size: 13px;
+    padding: 10px 30px;
+    width: 100px;
+    margin-right: 20px;
+  }
+  .section-watch .watch-container .watch-btn .btn-play a img {
+    width: 10px;
+  }
+  .section-watch .watch-container .watch-btn .btn-trailer a {
+    font-size: 10px;
+    padding: 10px 30px;
+    width: 70px;
+  }
+  .section-watch .watch-container .resume h5 {
+    font-size: 10px;
+  }
+  .section-watch .watch-container .resume h5 strong {
+    margin-bottom: 5px;
+  }
+  .section-watch .watch-container .categories {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .section-watch .watch-container .categories .category {
+    padding: 8px 12px;
+    font-size: 8px;
+    margin-right: 7px;
+  }
+  .section-watch h2 {
+    margin-left: 0%;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .section-watch .episodes .episode {
+    margin: 5px;
+    margin-block: 10px;
+    margin-right: 0px;
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 200px auto;
+    margin-inline: 5%;
+  }
+  .section-watch .episodes .episode .episode-photo .cover {
+    width: 200px;
+    height: 120px;
+    max-height: 120px;
+  }
+  .section-watch .episodes .episode .episode-photo .play {
+    width: 30px;
+    height: 30px;
+  }
+  .section-watch .episodes .episode .episode-text {
+    margin-inline: 10px;
+  }
+  .section-watch .episodes .episode .episode-text h5 {
+    margin-top: 4px;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .section-watch .episodes .episode .episode-text h2 {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 5px;
   }
 }
 * {

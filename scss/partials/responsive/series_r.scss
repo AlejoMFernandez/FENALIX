@@ -34,26 +34,37 @@
             }
             .series{
                 flex-wrap: wrap;
-                .anime{
-                    margin-inline: 15px;
-                    max-width: 150px;
-                    .anime-image{
-                        img{
-                            height: 220px;
-                            width: 150px;
+                a{
+                    .anime{
+                        margin-inline: 15px;
+                        max-width: 150px;
+                        .anime-image{
+                            img{
+                                height: 220px;
+                                width: 150px;
+                            }
                         }
-                    }
-                    .anime-text{
-                        padding: 0px;
-                        h2{
-                            font-size: 12px;
-                        }                
-                        h5{
-                            font-size: 9px;
+                        .anime-text{
+                            padding: 0px;
+                            h2{
+                                font-size: 12px;
+                            }                
+                            h5{
+                                font-size: 9px;
+                            }
                         }
                     }
                 }
             }
         }
     }
+    @keyframes appear {
+        0% {
+          transform: translateX(-100vh);
+        }
+        100% {
+          transform: translateX(0);
+        }
+    }
 }
+

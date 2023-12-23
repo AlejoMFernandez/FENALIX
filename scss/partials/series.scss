@@ -56,8 +56,6 @@
                             width: 250px;
                             height: 400px;
                             opacity: 0.8;
-                            &:hover{
-                            }
                         }
                     }
                     .anime-text{
@@ -78,18 +76,19 @@
                     }
                 }
             }
+            @keyframes appear {
+                0% {
+                  transform: translateY(-200%);
+                }
+                100% {
+                  transform: translateY(0);
+                }
+            }
+            
         }
     }
 }
 
-@keyframes appear {
-    0% {
-      transform: translateY(-200%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
 
 .aparecerDesdeArriba {
     animation: appear 0.4s forwards;

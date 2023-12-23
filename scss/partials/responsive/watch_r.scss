@@ -1,0 +1,106 @@
+@media (max-width: 768px){
+    .section-watch{
+        padding-top: 80px;
+        .image-cover-back{
+            height: 40vh;
+            img{
+                height: 44vh;
+            }
+        }
+        .watch-container{
+            margin-inline: 5%;
+            width: 65%;
+            .title{
+                margin-top: 0px;
+                h1{
+                    font-size: 25px;
+                }
+                h6{
+                    font-size: 10px;
+                }
+            }
+            .watch-btn{
+                height: 60px;
+                .btn-play{
+                    a{
+                        font-size: 13px;
+                        padding: 10px 30px;
+                        width: 100px;
+                        margin-right: 20px;
+                        img{
+                            width: 10px;
+                        }
+                    }
+                }
+                .btn-trailer{
+                    a{
+                        font-size: 10px;
+                        padding: 10px 30px;
+                        width: 70px;
+                    }
+                }
+            }
+            .resume{
+                h5{
+                    font-size: 10px;
+                    strong{
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            .categories{
+                margin-top: 10px;
+                margin-bottom: 0px;
+                .category{
+                    padding: 8px 12px;
+                    font-size: 8px;
+                    margin-right: 7px;
+                }
+            }
+        }
+        h2{
+            margin-left: 0%;
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .episodes{
+            .episode{
+                margin: 5px;
+                margin-block: 10px;
+                margin-right: 0px;
+                margin-left: 0;
+                width: 100%;
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: 200px auto;
+                margin-inline: 5%;
+                .episode-photo{
+                    .cover{
+                        width: 200px;
+                        height: 120px;
+                        max-height: 120px;
+                    }
+                    .play{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                .episode-text{
+                    margin-inline: 10px;
+                    h5{
+                        margin-top: 4px;
+                        font-size: 10px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                    h2{
+                        font-size: 14px;
+                        text-align: left;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
