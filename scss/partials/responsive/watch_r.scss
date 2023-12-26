@@ -68,13 +68,13 @@
             text-align: center;
             margin-bottom: 20px;
         }
-        .episodes{
-            .episode{
+        .episodes, .movies{
+            display: grid;
+            .episode, .movie{
                 margin: 5px;
                 margin-block: 10px;
                 margin-right: 0px;
                 margin-left: 0;
-                width: 100%;
                 max-width: 100%;
                 display: grid;
                 grid-template-columns: 200px auto;

@@ -139,6 +139,9 @@ footer nav ul #twitter:hover {
   display: flex;
   justify-content: center;
 }
+.section-carrousel .carrousel a {
+  text-decoration: none;
+}
 .section-carrousel .carrousel .anime {
   z-index: 3;
   margin-inline: 20px;
@@ -281,7 +284,7 @@ footer nav ul #twitter:hover {
 .section-aboutus .aboutus .text h1 {
   font-size: 40px;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -367,7 +370,6 @@ footer nav ul #twitter:hover {
   width: 100%;
   background-color: black;
   display: grid;
-  justify-content: center;
   position: relative;
   margin: 0;
   padding: 0;
@@ -514,6 +516,61 @@ footer nav ul #twitter:hover {
   color: #fff;
   margin-left: 90px;
   margin-top: 50px;
+}
+.section-watch .movies {
+  display: flex;
+  justify-content: start;
+}
+.section-watch .movies .movie {
+  width: 350px;
+  max-width: 350px;
+  overflow: hidden;
+  display: grid;
+  margin-left: 90px;
+  margin-top: 30px;
+}
+.section-watch .movies .movie:hover .episode-photo .cover {
+  filter: opacity(0.5);
+  transform: scale(1.2);
+}
+.section-watch .movies .movie:hover .episode-photo .play {
+  opacity: 1;
+}
+.section-watch .movies .movie .episode-photo {
+  overflow: hidden;
+  transition: opacity 0.4s ease-in-out;
+  position: relative;
+}
+.section-watch .movies .movie .episode-photo .cover {
+  width: 100%;
+  height: 200px;
+  filter: opacity(0.8);
+  transition-property: filter, transform;
+  transition-duration: 0.4s;
+  max-height: 250px;
+}
+.section-watch .movies .movie .episode-photo .play {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: scale 0.4s;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.section-watch .movies .movie .episode-text h5 {
+  color: gray;
+  font-weight: 300;
+  margin-top: 10px;
+  z-index: 2;
+}
+.section-watch .movies .movie .episode-text h2 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
 }
 .section-watch .episodes {
   display: flex;
@@ -730,7 +787,7 @@ footer nav ul #twitter:hover {
 }
 @media (max-width: 768px) {
   .section-aboutus {
-    padding-top: 60px;
+    padding-top: 80px;
   }
   .section-aboutus .aboutus {
     margin-inline: 10%;
@@ -740,12 +797,12 @@ footer nav ul #twitter:hover {
   }
   .section-aboutus .aboutus .text h1 {
     font-size: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     letter-spacing: 0px;
   }
   .section-aboutus .aboutus .images {
-    padding-top: 30px !important;
-    padding-bottom: 15px !important;
+    padding-top: 40px !important;
+    padding-bottom: 75px !important;
     padding-block: 0px;
     flex-direction: column;
   }
@@ -836,36 +893,38 @@ footer nav ul #twitter:hover {
     text-align: center;
     margin-bottom: 20px;
   }
-  .section-watch .episodes .episode {
+  .section-watch .episodes, .section-watch .movies {
+    display: grid;
+  }
+  .section-watch .episodes .episode, .section-watch .episodes .movie, .section-watch .movies .episode, .section-watch .movies .movie {
     margin: 5px;
     margin-block: 10px;
     margin-right: 0px;
     margin-left: 0;
-    width: 100%;
     max-width: 100%;
     display: grid;
     grid-template-columns: 200px auto;
     margin-inline: 5%;
   }
-  .section-watch .episodes .episode .episode-photo .cover {
+  .section-watch .episodes .episode .episode-photo .cover, .section-watch .episodes .movie .episode-photo .cover, .section-watch .movies .episode .episode-photo .cover, .section-watch .movies .movie .episode-photo .cover {
     width: 200px;
     height: 120px;
     max-height: 120px;
   }
-  .section-watch .episodes .episode .episode-photo .play {
+  .section-watch .episodes .episode .episode-photo .play, .section-watch .episodes .movie .episode-photo .play, .section-watch .movies .episode .episode-photo .play, .section-watch .movies .movie .episode-photo .play {
     width: 30px;
     height: 30px;
   }
-  .section-watch .episodes .episode .episode-text {
+  .section-watch .episodes .episode .episode-text, .section-watch .episodes .movie .episode-text, .section-watch .movies .episode .episode-text, .section-watch .movies .movie .episode-text {
     margin-inline: 10px;
   }
-  .section-watch .episodes .episode .episode-text h5 {
+  .section-watch .episodes .episode .episode-text h5, .section-watch .episodes .movie .episode-text h5, .section-watch .movies .episode .episode-text h5, .section-watch .movies .movie .episode-text h5 {
     margin-top: 4px;
     font-size: 10px;
     font-weight: 500;
     text-transform: uppercase;
   }
-  .section-watch .episodes .episode .episode-text h2 {
+  .section-watch .episodes .episode .episode-text h2, .section-watch .episodes .movie .episode-text h2, .section-watch .movies .episode .episode-text h2, .section-watch .movies .movie .episode-text h2 {
     font-size: 14px;
     text-align: left;
     margin-top: 5px;
