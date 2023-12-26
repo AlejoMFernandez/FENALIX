@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 /* HEADER */
 header {
   background-image: linear-gradient(to bottom, black, transparent);
@@ -312,6 +314,9 @@ footer nav ul #twitter:hover {
 }
 .section-aboutus .aboutus .images .redes {
   display: flex;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
   align-items: center;
 }
 .section-aboutus .aboutus .images .redes .red {
@@ -341,9 +346,26 @@ footer nav ul #twitter:hover {
   padding: 10px;
 }
 
+.section-soon {
+  height: 100vh;
+}
+.section-soon .soon-text .soon {
+  font-size: 100px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.section-soon .soon-text .soon .punto {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
 .section-watch {
   width: 100%;
-  background-image: linear-gradient(#181818 50%, black);
+  background-color: black;
   display: grid;
   justify-content: center;
   position: relative;
@@ -357,10 +379,22 @@ footer nav ul #twitter:hover {
   width: 100%;
   z-index: -1;
 }
+.section-watch .image-cover-back:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, black 1%, transparent, black);
+  z-index: 2;
+}
 .section-watch .image-cover-back img {
+  position: relative;
   z-index: 0;
   width: 100%;
   height: 70vh;
+  max-height: 70vh;
   object-fit: cover;
   box-shadow: 0px 5px 10px black;
 }
@@ -670,6 +704,7 @@ footer nav ul #twitter:hover {
   .section-series .container-series .series a .anime {
     margin-inline: 15px;
     max-width: 150px;
+    animation: appearLeft 0.6s forwards;
   }
   .section-series .container-series .series a .anime .anime-image img {
     height: 220px;
@@ -684,9 +719,9 @@ footer nav ul #twitter:hover {
   .section-series .container-series .series a .anime .anime-text h5 {
     font-size: 9px;
   }
-  @keyframes appear {
+  @keyframes appearLeft {
     0% {
-      transform: translateX(-100vh);
+      transform: translateX(-100%);
     }
     100% {
       transform: translateX(0);
@@ -743,8 +778,11 @@ footer nav ul #twitter:hover {
   .section-watch .image-cover-back {
     height: 40vh;
   }
+  .section-watch .image-cover-back:before {
+    height: 40vh;
+  }
   .section-watch .image-cover-back img {
-    height: 44vh;
+    height: 40vh;
   }
   .section-watch .watch-container {
     margin-inline: 5%;
@@ -785,10 +823,11 @@ footer nav ul #twitter:hover {
   .section-watch .watch-container .categories {
     margin-top: 10px;
     margin-bottom: 0px;
+    width: 120%;
   }
   .section-watch .watch-container .categories .category {
-    padding: 8px 12px;
-    font-size: 8px;
+    padding: 5px 8px;
+    font-size: 7px;
     margin-right: 7px;
   }
   .section-watch h2 {
@@ -832,6 +871,7 @@ footer nav ul #twitter:hover {
     margin-top: 5px;
   }
 }
+/* MIXINS */
 * {
   padding: 0;
   margin: 0;

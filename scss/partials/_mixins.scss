@@ -1,0 +1,15 @@
+@mixin not-mp{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+

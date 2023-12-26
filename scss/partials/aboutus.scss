@@ -1,3 +1,5 @@
+@import "mixins";
+
 .section-aboutus{
     width: 100%;
     background-image: linear-gradient(to bottom, black 1%, #0f0f0f, black);
@@ -43,8 +45,7 @@
                 }
             }
             .redes{
-                display: flex;
-                align-items: center;
+                @include flex-center;
                 .red{
                     margin: 20px;
                     #linkedin{
